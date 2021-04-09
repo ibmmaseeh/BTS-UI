@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,121 +8,208 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <title>Create Bug</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Create Bug Test</title>
 </head>
+
 <body>
-    <!-- NavBar -->
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="material-icons">&#xe5d2;</i>
-            </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Create Bug <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="editBug.html">Edit Bug <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="searchBug.html">Search Bug <span class="sr-only">(current)</span></a>
+              </li>
             
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="createBug.html">Create Bug</a>
-              <a class="dropdown-item" href="#">Edit Bug</a>
-              <a class="dropdown-item" href="#">Search Bug</a>
-            </div>
-          </a>
-          <a>Create bug</a>
+
+          </ul>
+        </div>
+      </nav>
+
+   
 
 
-
-    </nav>
-
-    <h2>Create Bug</h2>
-
-    <form  >
-        <div class="jumbotron">
+    <form class="jumbotron">
+        <div>
             <div class="form-group row">
-                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Title</label>
-                <div class="col-sm-10">
-                  <input type="text" class="col-sm-4" id="colFormLabel" aria-describedby="titleHelpBlock">
-                  <small id="titleHelpBlock" class="form-text text-muted">
-                    Your tile must be 5-200 characters long
-                  </small>
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Title</label>
+
+
+                <div class="col">
+                    <textarea class="form-control" placeholder="Title"></textarea>
                 </div>
-            </div>
-            
-            <div class="form-group row">
-                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Description</label>
-                <div class="col-sm-10">
-                  <input type="text" class="col-sm-4" id="colFormLabel" aria-describedby="titleHelpBlock">
-                  <small id="titleHelpBlock" class="form-text text-muted">
-                    Your tile must be 5-1000 characters long
-                  </small>
+
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Description</label>
+
+                <div class="col">
+                    <textarea class="form-control" placeholder="Description"></textarea>
                 </div>
+
             </div>
-
-            <div class="form-group row">
-                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Priority</label>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select Priority
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">LOW</a>
-                      <a class="dropdown-item" href="#">MEDIUM</a>
-                      <a class="dropdown-item" href="#">HIGH</a>
-                    </div>
-                </div>
-            </div>
-
-              <div class="form-group row">
-                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Type</label>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select Type
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Problem Request </a>
-                      <a class="dropdown-item" href="#">Change Request</a>
-                     
-                    </div>
-                  </div>
-              </div>
-
-              <div class="form-group row">
-                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Status</label>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select Status
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">OPEN </a>
-                      <a class="dropdown-item" href="#">CLOSED</a>
-                      <a class="dropdown-item" href="#">VERIFIED</a>
-                      <a class="dropdown-item" href="#">NEED MORE INFORMATION</a>
-                      <a class="dropdown-item" href="#">COULDNT REPRODUCE</a>
-                      <a class="dropdown-item" href="#">FIXED</a>
-                      <a class="dropdown-item" href="#">PENDING RETEST</a>
-                      <a class="dropdown-item" href="#">ASSIGNED</a>
-                      <a class="dropdown-item" href="#">RETEST</a>
-                      <a class="dropdown-item" href="#">NOT A BUG</a>
-                    </div>
-                  </div>
-              </div>
-            
-            <div class="form-group row">
-              <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Submit On</label>
-              <div class="col-sm-3">
-                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-              </div>
-            </div>
-
-              
 
         </div>
+
+        <div>
+            <div class="form-group row">
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Priority</label>
+
+
+                <div class="col">
+
+                    <select class="custom-select custom-select-md " >
+                        <option value="" disabled selected>Select Priority</option>
+                        <option>LOW</option>
+                        <option>MEDIUM</option>
+                        <option>HIGH</option>
+                    </select>
+
+
+                </div>
+
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Status</label>
+
+                <div class="col">
+                    <select class="custom-select custom-select-md">
+                        <option value="" disabled selected>Select Option</option>
+                        <option>OPEN</option>
+                        <option>CLOSED</option>
+                        <option>VERIFIED</option>
+                        <option>NEED MORE INFO</option>
+                        <option>COULDNT REPRODUCE</option>
+                        <option>FIXED</option>
+                        <option>PENDING RETEST</option>
+                        <option>ASSIGNED</option>
+                        <option>RETEST</option>
+                        <option>NOT A BUG</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="form-group row">
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Type</label>
+
+
+                <div class="col">
+
+                    <select class="custom-select custom-select-md " >
+                        <option value="" disabled selected>Select Type</option>
+                        <option>Problem Request/option>
+                        <option>Change Request</option>
+                    </select>
+
+
+                </div>
+
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Date</label>
+
+                <div class="col">
+                    <input class="custom-select custom-select-md " type="date" value="2020-04-09" id="date">
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="form-group row">
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Build Version</label>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Build Version">
+                </div>
+
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Project ID</label>
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter project ID">
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="form-group row">
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Module</label>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Module">
+                </div>
+
+                <label for="colFormLabelLg" class="col-lg-2 col-form-label">Product</label>
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Product Type">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+
+           
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
     </form>
 
-    
+
+
+
+
+
+
+
+
+
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
 </html>
